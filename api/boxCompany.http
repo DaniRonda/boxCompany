@@ -1,0 +1,6 @@
+@boxCompany_HostAddress = http://localhost:5296
+
+GET {{boxCompany_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
