@@ -26,4 +26,22 @@ public class BoxController : ControllerBase
     {
         return _boxService.GetBoxFeed();
     }
+
+    [HttpPost]
+    [Route("/api/boxes")]
+    public object Post([FromBody] Box box)
+    {
+        return box;
+    }
+    
+    
+    public class Box
+    {
+        public string Boxname { get; }
+
+        public Box(string boxname)
+        {
+            Boxname = boxname;
+        }
+    }
 }

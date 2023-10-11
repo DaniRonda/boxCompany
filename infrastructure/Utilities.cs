@@ -2,7 +2,7 @@
 
 public class Utilities
 {
-    private static readonly Uri Uri = new(Environment.GetEnvironmentVariable("pgconn")!);
+    private static readonly Uri Uri = new Uri("postgres://ugcxjvev:v6lkeLTgB15DtqPizyzU0mgEeibsiD_h@cornelius.db.elephantsql.com/ugcxjvev");
     
     public static readonly string
         ProperlyFormattedConnectionString = string.Format(
