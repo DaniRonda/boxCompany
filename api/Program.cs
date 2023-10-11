@@ -1,3 +1,4 @@
+using boxCompany.MiddleWare;
 using infrastructure;
 using infrastructure.Repositories;
 using service;
@@ -42,7 +43,6 @@ app.UseCors(options =>
         .AllowCredentials();
 });
 
-
 app.MapControllers();
-
+app.UseMiddleware<ExceptionHandler>();
 app.Run();

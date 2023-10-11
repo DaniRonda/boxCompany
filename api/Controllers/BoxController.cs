@@ -1,4 +1,9 @@
-﻿namespace boxCompany.Controllers;
+﻿using System.ComponentModel.DataAnnotations;
+using System.Diagnostics.CodeAnalysis;
+using boxCompany.Filters;
+using boxCompany.TransferModels;
+
+namespace boxCompany.Controllers;
 
 using infrastructure.Repositories;
 using Microsoft.AspNetCore.Mvc;
@@ -22,26 +27,52 @@ public class BoxController : ControllerBase
 
     [HttpGet]
     [Route("/api/boxes")]
-    public IEnumerable<BoxQuery> Get()
+    public ResponseDto Get()
     {
-        return _boxService.GetBoxFeed();
+        return new ResponseDto()
+        {
+            ResponseData = _boxService.GetBoxFeed()
+        };
+    }
+    
+    [HttpPut]
+    [ValidationModel]
+    [Route("/api/boxes/{boxId}")]
+    public ResponseDto Put([FromRoute] int boxId,
+        [FromBody] UpdateBoxRequestDto dto)
+    {
+        HttpContext.Response.StatusCode = 201;
+        return new ResponseDto()
+        {
+            MessageToClient = "Successfully updated",
+            ResponseData =
+                _boxService.UpdateBox(dto.BoxName, dto.BoxId, dto.BoxDescription, dto.BoxImgUrl)
+        };
+
     }
 
     [HttpPost]
+    [ValidationModel]
     [Route("/api/boxes")]
-    public object Post([FromBody] Box box)
+    public ResponseDto Post([FromBody] CreateBoxRequestDto dto)
     {
-        return box;
-    }
-    
-    
-    public class Box
-    {
-        public string Boxname { get; }
-
-        public Box(string boxname)
+        HttpContext.Response.StatusCode = StatusCodes.Status201Created;
+        
+        return new ResponseDto()
         {
-            Boxname = boxname;
-        }
+            MessageToClient = "Box created",
+            ResponseData = _boxService.CreateBox(dto.BoxName, dto.BoxDescription, dto.BoxImgUrl)
+        };
+    }
+    [HttpDelete]
+    [Route("/api/books/{bookId}")]
+    public ResponseDto Delete([FromRoute] int boxId)
+    {
+        _boxService.DeleteBox(boxId);
+        return new ResponseDto()
+        {
+            MessageToClient = "Successfully deleted"
+        };
+
     }
 }
