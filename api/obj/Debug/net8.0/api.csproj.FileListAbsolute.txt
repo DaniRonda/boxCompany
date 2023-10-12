@@ -39,3 +39,8 @@ C:\Users\danie\Desktop\boxCompany\api\obj\Debug\net8.0\refint\api.dll
 C:\Users\danie\Desktop\boxCompany\api\obj\Debug\net8.0\api.pdb
 C:\Users\danie\Desktop\boxCompany\api\obj\Debug\net8.0\api.genruntimeconfig.cache
 C:\Users\danie\Desktop\boxCompany\api\obj\Debug\net8.0\ref\api.dll
+C:\Users\danie\Desktop\boxCompany\api\bin\Debug\net8.0\Microsoft.AspNetCore.SpaServices.Extensions.dll
+C:\Users\danie\Desktop\boxCompany\api\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\danie\Desktop\boxCompany\api\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\danie\Desktop\boxCompany\api\bin\Debug\net8.0\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\danie\Desktop\boxCompany\api\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
