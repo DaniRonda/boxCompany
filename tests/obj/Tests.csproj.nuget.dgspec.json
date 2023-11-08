@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\danie\\Desktop\\boxCompany\\Tests\\Tests.csproj": {}
+    "C:\\Users\\danie\\Desktop\\boxCompany\\tests\\tests.csproj": {}
   },
   "projects": {
     "C:\\Users\\danie\\Desktop\\boxCompany\\infrastructure\\infrastructure.csproj": {
@@ -67,14 +67,14 @@
         }
       }
     },
-    "C:\\Users\\danie\\Desktop\\boxCompany\\Tests\\Tests.csproj": {
+    "C:\\Users\\danie\\Desktop\\boxCompany\\tests\\tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\danie\\Desktop\\boxCompany\\Tests\\Tests.csproj",
-        "projectName": "Tests",
-        "projectPath": "C:\\Users\\danie\\Desktop\\boxCompany\\Tests\\Tests.csproj",
+        "projectUniqueName": "C:\\Users\\danie\\Desktop\\boxCompany\\tests\\tests.csproj",
+        "projectName": "tests",
+        "projectPath": "C:\\Users\\danie\\Desktop\\boxCompany\\tests\\tests.csproj",
         "packagesPath": "C:\\Users\\danie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\danie\\Desktop\\boxCompany\\Tests\\obj\\",
+        "outputPath": "C:\\Users\\danie\\Desktop\\boxCompany\\tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\danie\\AppData\\Roaming\\NuGet\\NuGet.Config"

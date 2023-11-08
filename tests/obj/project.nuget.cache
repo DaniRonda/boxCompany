@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MIj/JMdSftv6NAsuLUwEbIjUutkYHUBiFTl5ew/pGNSrDdCT8720sVUYHKwdqwngqcQpNxU6R6gd4fdyi+neVw==",
+  "dgSpecHash": "dXMI38iH72q4CGC4IPdEVfqn7em9PXUfhdn/GPica/Mo9VQamZM+IEgFf4Gzz6rkMZPKBGh3lkBG26q9NZv1FQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\danie\\Desktop\\boxCompany\\Tests\\Tests.csproj",
+  "projectFilePath": "C:\\Users\\danie\\Desktop\\boxCompany\\tests\\tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\danie\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
     "C:\\Users\\danie\\.nuget\\packages\\dapper\\2.1.4\\dapper.2.1.4.nupkg.sha512",

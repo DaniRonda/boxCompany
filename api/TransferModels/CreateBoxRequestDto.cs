@@ -1,5 +1,4 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using boxCompany.CustomDataAnnotations;
 
 namespace boxCompany.TransferModels;
 
